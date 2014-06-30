@@ -21,15 +21,15 @@ PRODUCT_RELEASE_NAME := SPH-D710
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CentauriROM stuff.
-$(call inherit-product, vendor/centauri/config/common_phone.mk)
+# Inherit some common LiquidSmooth stuff.
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/d710/full_d710.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d710
-PRODUCT_NAME := centauri_d710
+PRODUCT_NAME := liquid_d710
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SPH-D710 
 

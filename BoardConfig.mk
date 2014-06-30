@@ -16,7 +16,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
--include device/samsung/galaxys2-common/BoardCommonConfig.mk
+-include device/samsung/d710-common/BoardCommonConfig.mk
 
 TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 
@@ -24,8 +24,10 @@ TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth
 
 # Kernel Config
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/d710
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
+TARGET_GCC_VERSION_ARM := 4.7-sm
+TARGET_GCC_VERSION_AND := 4.8-sm
 
 # Selinux
 BOARD_SEPOLICY_DIRS += \
@@ -58,4 +60,4 @@ TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/d710/BoardConfigVendor.mk
 
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2-common/shbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/d710-common/shbootimg.mk
