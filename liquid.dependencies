@@ -1,30 +1,24 @@
 [
     {
-        "remote": "lsd",
+        "remote": "crd",
         "repository": "android_device_samsung_d710-common",
         "target_path": "device/samsung/d710-common",
         "revision": "kitkat"
     },
     {
-        "remote": "lsd",
+        "remote": "crd",
         "repository": "android_kernel_samsung_d710",
         "target_path": "kernel/samsung/d710",
         "revision": "kitkat"
     },
     {
-        "remote": "lsd",
-        "repository": "android_vendor_samsung_d710,
+        "remote": "crd",
+        "repository": "proprietary_vendor_samsung,
         "target_path": "vendor/samsung",
         "revision": "kitkat"
     },
     {
-        "remote": "lsd",
-        "repository": "android_vendor_samsung_d710-common",
-        "target_path": "vendor/samsung",
-        "revision": "kitkat"
-    },
-    {
-        "remote": "lsd",
+        "remote": "crd",
         "repository": "android_hardware_samsung",
         "target_path": "hardware/samsung",
         "revision": "kitkat"
