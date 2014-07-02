@@ -1,32 +1,32 @@
 [
     {
-        "remote": "crd",
-        "repository": "android_device_samsung_d710-common",
+        "remote": "gh",
+        "repository": "CentauriROM-Devices/android_device_samsung_d710-common",
         "target_path": "device/samsung/d710-common",
         "revision": "kitkat"
     },
     {
-        "remote": "crd",
-        "repository": "android_kernel_samsung_d710",
+        "remote": "gh",
+        "repository": "CentauriROM-Devices/android_kernel_samsung_d710",
         "target_path": "kernel/samsung/d710",
         "revision": "kitkat"
     },
     {
-        "remote": "crd",
+        "remote": "ls",
         "repository": "proprietary_vendor_samsung,
         "target_path": "vendor/samsung",
         "revision": "kitkat"
     },
     {
-        "remote": "crd",
+        "remote": "cm",
         "repository": "android_hardware_samsung",
         "target_path": "hardware/samsung",
-        "revision": "kitkat"
+        "revision": "cm-11.0"
     },
     {
-        "remote": "centauri",
+        "remote": "cm",
         "repository": "android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode",
-        "revision": "kk44"
+        "revision": "cm-11.0"
     }
 ]
