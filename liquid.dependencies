@@ -13,7 +13,7 @@
     },
     {
         "remote": "ls",
-        "repository": "proprietary_vendor_samsung,
+        "repository": "proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
         "revision": "kitkat"
     },
