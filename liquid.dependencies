@@ -1,13 +1,13 @@
 [
     {
         "remote": "gh",
-        "repository": "CentauriROM-Devices/android_device_samsung_d710-common",
+        "repository": "mtb3000gt/android_device_samsung_d710-common",
         "target_path": "device/samsung/d710-common",
         "revision": "kitkat"
     },
     {
         "remote": "gh",
-        "repository": "CentauriROM-Devices/android_kernel_samsung_d710",
+        "repository": "mtb3000gt/android_kernel_samsung_d710",
         "target_path": "kernel/samsung/d710",
         "revision": "kitkat"
     },
