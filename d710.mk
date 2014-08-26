@@ -45,13 +45,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
-# Configs
+# Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down \
+    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf \
-    $(LOCAL_PATH)/configs/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml
+    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -59,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    AngryGPS 
+    AngryGPS
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
@@ -95,16 +96,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony property for CDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=4 \
+    net.cdma.pppd.authtype=require-pap \
     net.cdma.datalinkinterface=/dev/ttyCDMA0 \
     net.interfaces.defaultroute=cdma \
     net.cdma.ppp.interface=ppp0 \
     ro.wimax.interface=uwbr0 \
     net.connectivity.type=CDMA1 \
-    net.cdma.pppd.authtype=require-pap \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
-    ro.telephony.ril.v3=skipdatareg \
-    ro.ril.samsung_cdma=true \
+    ro.ril.samsung_cdma=true
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
@@ -129,7 +129,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Include common makefile
 $(call inherit-product-if-exists, vendor/samsung/d710/d710-vendor.mk)
-$(call inherit-product, device/samsung/d710-common/common.mk)
+$(call inherit-product, device/samsung/galaxys2-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay \
-    device/samsung/d710-common/overlay
+    device/samsung/galaxys2-common/overlay

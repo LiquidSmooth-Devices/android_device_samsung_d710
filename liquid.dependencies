@@ -1,18 +1,18 @@
 [
     {
-        "remote": "gh",
-        "repository": "mtb3000gt/android_device_samsung_d710-common",
-        "target_path": "device/samsung/d710-common",
+        "remote": "lsd",
+        "repository": "android_device_samsung_galaxys2-common",
+        "target_path": "device/samsung/galaxys2-common",
         "revision": "kitkat"
     },
     {
         "remote": "gh",
-        "repository": "mtb3000gt/android_kernel_samsung_d710",
-        "target_path": "kernel/samsung/d710",
+        "repository": "SamsungD710/android_kernel_samsung_smdk4412",
+        "target_path": "kernel/samsung/smdk4412",
         "revision": "kitkat"
     },
     {
-        "remote": "ls",
+        "remote": "lsd",
         "repository": "proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
         "revision": "kitkat"
