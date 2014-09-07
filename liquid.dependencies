@@ -7,8 +7,8 @@
     },
     {
         "remote": "gh",
-        "repository": "SamsungD710/android_kernel_samsung_smdk4412",
-        "target_path": "kernel/samsung/smdk4412",
+        "repository": "D710Kernel/android_kernel_samsung_d710",
+        "target_path": "kernel/samsung/d710",
         "revision": "kitkat"
     },
     {
