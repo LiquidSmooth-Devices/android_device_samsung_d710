@@ -12,10 +12,10 @@
         "revision": "kitkat"
     },
     {
-        "remote": "ls",
+        "remote": "tm",
         "repository": "proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
-        "revision": "kitkat"
+        "revision": "cm-11.0"
     },
     {
         "remote": "cm",
