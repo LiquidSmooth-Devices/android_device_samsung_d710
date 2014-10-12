@@ -102,7 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.wimax.interface=uwbr0 \
     net.connectivity.type=CDMA1 \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
-    ro.telephony.ril_class=SamsungCDMAv6RIL \
+    ro.telephony.ril_class=Epic4GTouchRIL \
     ro.telephony.ril.v3=skipdatareg \
     ro.ril.samsung_cdma=true
 
