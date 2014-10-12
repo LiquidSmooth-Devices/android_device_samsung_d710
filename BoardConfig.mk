@@ -25,7 +25,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
+TARGET_KERNEL_CONFIG := liquid_d710_defconfig
 TARGET_GCC_VERSION_ARM := 4.10-sm
 
 # Selinux
