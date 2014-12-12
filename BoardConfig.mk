@@ -23,22 +23,9 @@ TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth
 
-# Kernel
+# Kernel Config
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := liquid_d710_defconfig
-TARGET_GCC_VERSION_ARM := 4.10-sm
-
-# Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/d710/selinux
-
-BOARD_SEPOLICY_UNION += \
-    device.te \
-    file.te \
-    file_contexts \
-    mediaserver.te \
-    system.te \
-    wimax.te
 
 # Notification LED
 BOARD_HAS_LED_NOTIF := true

@@ -48,18 +48,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down \
+    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf \
-    $(LOCAL_PATH)/configs/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml
+    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.exynos4
 
-# GPS
+# Packages
 PRODUCT_PACKAGES += \
-    AngryGPS
+    AngryGPS \
+    WiMAXSettings \
+    WiMAXHiddenMenu
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
@@ -103,7 +106,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.connectivity.type=CDMA1 \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
-    ro.telephony.ril.v3=skipdatareg \
     ro.ril.samsung_cdma=true
 
 # enable Google-specific location features,
